@@ -1,4 +1,4 @@
-import { UserButton } from "@clerk/nextjs";
+import AccountProfile from "@/components/forms/AccountProfile";
 import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
