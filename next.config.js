@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    serverActions: true,
     serverComponentsExternalPackages: ["mongoose"],
+    // If `serverActions` needs to be enabled, specify as an object or remove if not needed
+    serverActions: {},
   },
   images: {
     remotePatterns: [
@@ -23,9 +24,9 @@ const nextConfig = {
         hostname: "placehold.co",
       },
     ],
-    typescript: {
-      ignoreBuildErrors: true,
-    },
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 
